@@ -6,6 +6,7 @@ public with sharing class Accountdemo {
             FROM Contact
             WHERE AccountId=:accountId
            //test
+           //class
             LIMIT 10];
     }
 }
