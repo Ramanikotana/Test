@@ -6,11 +6,11 @@ public with sharing class Contactdemo {
     }
     @AuraEnabled(cacheable=true)
     public static List<Account> getAccounts(){
-        return [select Id,name,type,phone,industry from Account limit 10];
+        return [select Id,type,phone,industry from Account limit 10];
     }
     @auraEnabled
     public static List<Account> getAccountRecordsList(){
-        return [select id,name,type,phone,industry from Account limit 10];
+        return [select id,type,phone,industry from Account limit 10];
     }
     public pageReference retrieveAccountDetail(){
         if(accountId!=null){
