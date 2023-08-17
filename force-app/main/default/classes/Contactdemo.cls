@@ -10,7 +10,7 @@ public with sharing class Contactdemo {
     }
     @auraEnabled
     public static List<Account> getAccountRecordsList(){
-        return [select id,type,phone,industry from Account limit 10];
+        return [select id,name,type,phone,industry from Account limit 10];
     }
     public pageReference retrieveAccountDetail(){
         if(accountId!=null){
