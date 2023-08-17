@@ -7,6 +7,6 @@ public with sharing class Accountdemo {
             WHERE AccountId=:accountId
            //test
            //class
-            LIMIT 10];
+            LIMIT 20];
     }
 }
