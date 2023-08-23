@@ -4,7 +4,7 @@ public with sharing class Accountdemo {
         return [
             SELECT Id, FirstName,LastNAme,Email,Phone
             FROM Contact
-            WHERE AccountId=:accountId
+            WHERE AccountId=:accountId;
            //test
            //class
             LIMIT 20];
